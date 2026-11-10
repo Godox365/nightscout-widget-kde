@@ -40,9 +40,11 @@ Item {
     Layout.preferredHeight: Math.max(showRing ? ringSize : 0, glucoseLabel.implicitHeight, trendLabel.implicitHeight)
 
     RowLayout {
-        anchors.fill: parent
+        anchors.left: parent.left
+        anchors.right: parent.right
         anchors.leftMargin: rootWidget.hMargin
         anchors.rightMargin: rootWidget.hMargin
+        anchors.verticalCenter: parent.verticalCenter
         spacing: rootWidget.spacing
 
         Canvas {
